@@ -1,0 +1,1 @@
+chrome-extension://dpaohcncbmkojcpcjaojcehdlnjfbjkl/pinboard_content_script.js

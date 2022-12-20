@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://opg.me/ns#">
+
+<head>
+    <title>Aashish Balaji | SWE</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <meta name="title" property="og:title" content="Aashish Balaji" />
+    <meta name="description" property="og:description" content="I'm a software engineer in Toronto, Canada & co-creator of Triage." />
+    <!-- <meta name="type" property="og:type" content="website" /> -->
+    <!-- <meta name="url" property="og:url" content="https://aashishb.github.io/" /> -->
+    <meta name="image" property="og:image" content="/favicons/sb-favicon-16x16.png" />
+    <meta name="author" content="Aashish Balaji" />
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/sb-favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/sb-favicon-16x16.png" />
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="/favicons/sb-favicon-16x16.png" />
+    <meta name="msapplication-TileColor" content="#271d3f" />
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet" />
+    <script>
+        var clicky_site_ids = clicky_site_ids || [];
+        clicky_site_ids.push(101231323);
+    </script>
+    <script async src="//static.getclicky.com/js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./assets/images/aashish-resume.pdf" target="_blank">Resume</a>
+                </li>
+                <li>
+                    <a href="https://github.com/aashish-b" target="_blank">Github</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/aashish-balaji-57a087249/" target="_blank">LinkedIn
+            </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro" class="flexbox horz-center">
+            <img id="avatar" class="profile" src="./assets/images/aashish-balaji.jpeg" alt="aashish photo" />
+            <h1 class="profile-name"> <img
+              id="wave-emoji"
+              src="./assets/images/wave-emoji.png" width="50" height="50" hspace="25"
+              alt="wave emoji"
+          />Hey, I'm Aashish!</h1>
+            <p class="intro-p-1">I'm a software engineer based in Toronto, Canada.</p>
+            <p class="intro-p-2">
+                My most recent project was
+                <a class="triage" href="https://team-triage.github.io/">Triage</a>, an open-source consumer proxy that solves head-of-line blocking for Kafka consumers, using a dead letter store and parallelism.
+            </p>
+            <p></p>
+        </section>
+
+        <section id="triage-project" class="flexbox horz-center">
+            <div id="triage-title-container" class="flexbox">
+                <a href="https://team-triage.github.io/"><img
+              id="triage-logo"
+              src="./assets/images/triage_fullLogo_Dark.png" width="550" height="150" vspace="20"
+              alt="triage logo"
+          /></a>
+            </div>
+            <div class="flexbox vert-center" id="triage-container">
+                <div id="column-1">
+                    <p>
+                        <a class="triage" href="https://team-triage.github.io">Triage</a> is an open-source consumer proxy for Kafka developers. It solves head-of-line blocking due to poison pills and non-uniform latency.
+
+                    <p>
+                        Triage avoids data loss by saving corrupt messages in a dead letter store. It also increases parallelism to enable more consumer instances to maintain throughput in case of a delay.
+                    </p>
+
+                    <p>
+                        You can deploy Triage on AWS Fargate using our CLI!
+                    </p>
+                    <a id="triage-repo-btn" class="btn" target="_blank" href="https://team-triage.github.io/case-study">Read our Case Study</a
+              >
+          </div>
+          <div id="column-2">
+              <img
+                hspace="20"
+                id="setup-command-gif"
+                src="./assets/images/triage1.png"
+                alt="An image showing a Triage infrastructure diagram"
+              />
+          </div>
+        </div>
+      </section>
+
+      <section id="triage-examples" class="flexbox horz-center" style="border-style: solid;border-width: thick;border-color: #FF7D00; ">
+        <div class="flexbox vert-center" id="triage-container" >
+          <div id="example-1">
+            <h3 style="color:white;">Poison pills are captured and stored.</h3>
+            <img
+                class="example-ui"
+                src="./assets/gifs/poisonpill.gif"
+                alt="An image showing Triage dealing with poison pills"
+              />
+          </div>
+          <div id="example-2">
+            <h3 style="color:white;">Consistent throughput despite non-uniform latency</h3>
+            <img
+                vspace="40"
+                class="example-ui"
+                src="./assets/gifs/nucl.gif"
+                alt="An image showing parallelism and Triage solving NUCL"
+              />
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="flexbox horz-center" style="border-style: solid;border-width: thin;border-color: black;">
+        <h2>Other Projects</h2>
+        <ul class="flexbox vert-center">
+          <li>
+            <img
+              src="./assets/images/requestdjinn.jpeg"
+              alt="Screenshot of Request-Djinn"
+            />
+            <div class="tags">
+              <button>MongoDB</button>
+              <button>Express.js</button>
+              <button>React</button>
+              <button>Node.js</button>
+              <button>PostgreSQL</button>
+            </div>
+            <h4>Request-Djinn</h4>
+            <p>
+              A RequestBin clone that makes it easy to inspect webhooks. 
+              Built with MERN and PostgreSQL.
+            </p>
+          </li>
+          <li>
+            <img
+              src="./assets/images/shoppingcart.png"
+              alt="Screenshot of Shopping Cart"
+            />
+            <div class="tags">
+              <button>MongoDB</button>
+              <button>Docker</button>
+              <button>JavaScript</button>
+            </div>
+            <h4>Shopping Cart</h4>
+            <p>
+              An e-commerce app built with JavaScript, Express.js, and MongoDB that 
+              was containerized using Docker.
+            </p>
+          </li>
+          <li>
+            <img
+              src="./assets/images/todolist.png"
+              alt="Screenshot of TodoList"
+            />
+            <div class="tags">
+              <button>REST API</button>
+              <button>HTML/CSS</button>
+              <button>Handlebars</button>
+            </div>
+            <h4>Todo List</h4>
+            <p>
+              A task tracking app built with HTML/CSS, jQuery + Handlebars, and
+              JavaScript - with CRUD functionality.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section id="writing" class="flexbox horz-center" style="border-style: solid;border-width: thin;border-color: black;">
+        <h2>Writing</h2>
+        <ul class="flexbox vert-center">
+          <p><a class="triage" href="https://hackernoon.com/getting-to-know-grpc/">Getting to know gRPC</a</p>
+        </ul>
+      </section>
+      <section id="contact" class="flexbox horz-center">
+        <h3>Get in touch!</h3>
+        <h4>
+          <a href="mailto:aashish.balaji1@live.com"
+            >aashish.balaji1@live.com</a
+          >
+        </h4>
+        <ul class="flexbox vert-center">
+          <li>
+            <a href="./assets/images/aashish-resume.pdf" target="_blank">
+              <img
+                class="icon"
+                src="./assets/icons/resume.svg"
+                alt="link to Aashish Balaji's resume"
+              />
+            </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/aashish-b" target="_blank">
+              <img
+                class="icon"
+                src="./assets/icons/git_hub.svg"
+                alt="link to Aashish Balaji's GitHub"
+              />
+            </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/aashish-balaji/" target="_blank">
+              <img
+                class="icon"
+                src="./assets/icons/linked_in.svg"
+                alt="link to Aashish Balaji's LinkedIn"
+              />
+            </a>
+                    </li>
+                    </ul>
+        </section>
+    </main>
+</body>
+
+</html>
